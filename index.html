@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback do Atendimento Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Feedback</h1>
+    </header>
+    <main>
+        <form id="feedback-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="rating">Classificação (1 a 5):</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            
+            <label for="comments">Comentários:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        <div id="success-message" class="hidden">Obrigado pelo seu feedback!</div>
+        <div id="error-message" class="hidden">Ocorreu um erro. Por favor, tente novamente.</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
